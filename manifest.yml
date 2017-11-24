@@ -1,15 +1,15 @@
 ---
 declared-services:
-  my-conversation-service:
-    label: conversation
+  Language Translator-7n:
+    label: Language Translator
     plan: free
 applications:
-- name: conversation-simple
+- name: tranlate-bot
   command: npm start
   path: .
   memory: 256M
   instances: 1
   services:
-  - my-conversation-service
+  -  Language Translator-7n
   env:
     NPM_CONFIG_PRODUCTION: false
